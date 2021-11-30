@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "414598165478",
+    "project_id": "flash-chat-44e3d",
+    "storage_bucket": "flash-chat-44e3d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:414598165478:android:be7f1123b354236e431c27",
+        "android_client_info": {
+          "package_name": "co.Thalles.flash_chat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "414598165478-n9kvudcgq3aaejtokh5820anol1jgb23.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDC4-D5rny8KSQ2Q2diUhYh7IndY1jpYng"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "414598165478-n9kvudcgq3aaejtokh5820anol1jgb23.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
