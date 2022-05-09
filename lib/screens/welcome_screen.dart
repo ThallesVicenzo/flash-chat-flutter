@@ -25,7 +25,8 @@ class _WelcomeScreenState extends State<WelcomeScreen>
       vsync: this,
     );
 
-    animation = ColorTween(begin: Colors.blueGrey, end: Colors.white).animate(controller);
+    animation = ColorTween(begin: Colors.blueGrey, end: Colors.white)
+        .animate(controller);
 
     controller.forward();
 
@@ -36,7 +37,7 @@ class _WelcomeScreenState extends State<WelcomeScreen>
   }
 
   @override
-  void dispose(){
+  void dispose() {
     controller.dispose();
     super.dispose();
   }
@@ -59,6 +60,7 @@ class _WelcomeScreenState extends State<WelcomeScreen>
                     height: 60.0,
                   ),
                 ),
+                // ignore: deprecated_member_use
                 TypewriterAnimatedTextKit(
                   text: ['Flash Chat'],
                   textStyle: TextStyle(
@@ -72,21 +74,21 @@ class _WelcomeScreenState extends State<WelcomeScreen>
               height: 48.0,
             ),
             RoundedButton(
-              title: 'LogIn',
-              color: Colors.blue,
-              onPressed: () {
-                setState(() {
-                  Navigator.pushNamed(context, LoginScreen.id);
-                });
-              }),
+                title: 'LogIn',
+                color: Colors.blue,
+                onPressed: () {
+                  setState(() {
+                    Navigator.pushNamed(context, LoginScreen.id);
+                  });
+                }),
             RoundedButton(
-              title: 'Registration',
-              color: Colors.green,
-              onPressed: () {
-                setState(() {
-                  Navigator.pushNamed(context, RegistrationScreen.id);
-                });
-              }),
+                title: 'Registration',
+                color: Colors.green,
+                onPressed: () {
+                  setState(() {
+                    Navigator.pushNamed(context, RegistrationScreen.id);
+                  });
+                }),
           ],
         ),
       ),

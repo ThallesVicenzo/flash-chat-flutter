@@ -12,11 +12,7 @@ class LoginScreen extends StatefulWidget {
 }
 
 class _LoginScreenState extends State<LoginScreen> {
-  final _auth = FirebaseAuth.instance;
-
-  void getCurrentUser(){
-    final user = _auth.currentUser();
-  }
+  void getCurrentUser() {}
 
   @override
   Widget build(BuildContext context) {
@@ -52,7 +48,8 @@ class _LoginScreenState extends State<LoginScreen> {
                 onChanged: (value) {
                   email = value;
                 },
-                decoration: kTextFieldDecoration.copyWith(hintText: 'Type your email here '),
+                decoration: kTextFieldDecoration.copyWith(
+                    hintText: 'Type your email here '),
               ),
               SizedBox(
                 height: 8.0,
@@ -64,7 +61,9 @@ class _LoginScreenState extends State<LoginScreen> {
                 onChanged: (value) {
                   password = value;
                 },
-                decoration: kTextFieldDecoration.copyWith(hintText: 'Enter your password',),
+                decoration: kTextFieldDecoration.copyWith(
+                  hintText: 'Enter your password',
+                ),
               ),
               SizedBox(
                 height: 24.0,
@@ -86,7 +85,6 @@ class _LoginScreenState extends State<LoginScreen> {
                     setState(() {
                       spinning = false;
                     });
-
                   } catch (e) {
                     print(e);
                   }

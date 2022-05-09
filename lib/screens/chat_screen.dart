@@ -1,4 +1,5 @@
-import 'package:flutter/cupertino.dart';
+// ignore_for_file: deprecated_member_use
+
 import 'package:flutter/material.dart';
 import 'package:flash_chat/constants.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -122,7 +123,7 @@ class MessageStream extends StatelessWidget {
           }
           return Expanded(
             child: ListView(
-              reverse: true,
+                reverse: true,
                 padding: EdgeInsets.symmetric(horizontal: 10.0, vertical: 20.0),
                 children: messageBubbles),
           );
